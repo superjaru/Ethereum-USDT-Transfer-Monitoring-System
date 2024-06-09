@@ -16,6 +16,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
 
 ## Demo
 
+- This Demo was tested by monitoring USDC instead of USDT because USDT is rarely found in this address.
 <img src="./pic/441562154_446211551452050_7123654244043631869_n.jpg" width="350"> <img src="./pic/Screenshot%202024-06-09%20223513.jpg" width="800">
 
 
