@@ -21,7 +21,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
 
 
 ## Addtional Detail  And Technical Questions
-- Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.
+- <code style="color : aqua">Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.</code>
 
 1. **Connect to the Ethereum Node:**
     - Uses the Infura API to connect to the Ethereum mainnet via HTTP..
