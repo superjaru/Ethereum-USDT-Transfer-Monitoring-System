@@ -16,8 +16,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
 
 ## Demo
 
-<img src="./pic/441562154_446211551452050_7123654244043631869_n.jpg" width="350">
-<img src="./pic/Screenshot%202024-06-09%20223513.jpg" width="500">
+<img src="./pic/441562154_446211551452050_7123654244043631869_n.jpg" width="350"> <img src="./pic/Screenshot%202024-06-09%20223513.jpg" width="800">
 
 
 
