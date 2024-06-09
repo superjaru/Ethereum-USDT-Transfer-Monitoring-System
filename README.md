@@ -21,7 +21,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
 
 
 ## Addtional Detail  And Technical Questions
-- <span style="font-size:1.5em;">Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.</span>
+-  <font size="2">Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.</font>
 
 
 1. **Connect to the Ethereum Node:**
