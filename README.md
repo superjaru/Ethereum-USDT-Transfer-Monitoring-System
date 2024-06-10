@@ -21,7 +21,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
 
 
 ## Addtional Detail  And Follow-up Technical Questions
--  **Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.**
+ ### **Q1: Please provide technical details (can be as in-depth as pseudo-code and/or an overview of the algorithm or approaches used), including the analysis of why the design is good, compared to other possible designs.**
 
 
 1. **Connect to the Ethereum Node:**
@@ -115,9 +115,9 @@ Why This Design is Good
 
 Compared to other possible designs, this approach have a good balance between simplicity and functionality. Using existing libraries like 'web3' and 'smtplib' reducing the need for custom implementations.
 
- ### Q2: Please also state the analysis of potential loopholes / trade-offs that the design you proposed may have (that may cause the monitoring to not function properly).
-D
-espite its strengths, the proposed design may have some limitations and trade-offs:
+ ### ***Q2: Please also state the analysis of potential loopholes / trade-offs that the design you proposed may have (that may cause the monitoring to not function properly).***
+
+Despite its strengths, the proposed design may have some limitations and trade-offs:
 
 - Relying on External Services: The code relies on external services like Infura for Ethereum node access and SMTP servers for email sending. Any issues or downtime with these services could impact the functionality of the monitoring system.
 - Potential Scalability Issues: If lots of transactions happen quickly, this code could have trouble. Implementing more advanced event detection mechanisms like WebSocket subscriptions could resolve this issue.
