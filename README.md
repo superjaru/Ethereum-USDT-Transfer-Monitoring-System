@@ -30,9 +30,9 @@ This project is designed to monitor USDT transfers to the zero address on the Et
     ```python
     from web3 import Web3, HTTPProvider
     def connect_to_ethereum_node():
-    w3 = Web3(HTTPProvider(f"https://mainnet.infura.io/v3/{INFURA_API_KEY}"))
-    if w3.is_connected():
-        return w3
+     ethClient = Web3(HTTPProvider(f"https://mainnet.infura.io/v3/{INFURA_API_KEY}"))
+    if  ethClient.is_connected():
+        return ethClient
     else:
         raise ConnectionError("Failed to connect to Ethereum node")
      ```
@@ -42,7 +42,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
     - Continuously checks for new events and handles them accordingly.
     - Pseudo Code : 
      ```python
-    def start_listener(w3):
+    def start_listener(ethClient):
     zero_address = "0x0000000000000000000000000000000000000000"
     usdt_address = "0xdAC17F958D2ee523a2206206994597C13D831ec7"
 
@@ -56,7 +56,7 @@ This project is designed to monitor USDT transfers to the zero address on the Et
     }
 
     while True:
-        events = w3.eth.get_logs(filter_params)
+        events = ethClient.eth.get_logs(filter_params)
         for event in events:
             handle_event(event)
         sleep(5)
@@ -82,25 +82,12 @@ This project is designed to monitor USDT transfers to the zero address on the Et
     message['To'] = receiver_email
 
     with smtplib.SMTP('smtp.office365.com', 587) as server:
-        server.starttls()
+        server.start()
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, receiver_email, message.as_string())
 
      ```
 
-4. **Send Email Notifications:**
-    - When a transfer to the zero address is detected, format the event details and send an email notification using SMTP.
-    - Configures the email content and recipient details.
-    - Pseudo Code :
-    ```python
-    from web3 import Web3, HTTPProvider
-    def connect_to_ethereum_node():
-    w3 = Web3(HTTPProvider(f"https://mainnet.infura.io/v3/{INFURA_API_KEY}"))
-    if w3.is_connected():
-        return w3
-    else:
-        raise ConnectionError("Failed to connect to Ethereum node")
-     ```
 Why This Design is Good
 1. Simplicity and Clarity:
 - The design uses clear and well-defined steps to achieve its goal, making it easy to understand and maintain.
