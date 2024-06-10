@@ -115,8 +115,7 @@ Why This Design is Good
 
 Compared to other possible designs, this approach have a good balance between simplicity and functionality. Using existing libraries like 'web3' and 'smtplib' reducing the need for custom implementations.
 
-- **Q2: Please also state the analysis of potential loopholes / trade-offs that the design you proposed may have (that may cause the monitoring to not function properly).**
-
+- <p style="font-size:30px;">Q2: Please also state the analysis of potential loopholes / trade-offs that the design you proposed may have (that may cause the monitoring to not function properly).</p>
 Despite its strengths, the proposed design may have some limitations and trade-offs:
 
 - Relying on External Services: The code relies on external services like Infura for Ethereum node access and SMTP servers for email sending. Any issues or downtime with these services could impact the functionality of the monitoring system.
