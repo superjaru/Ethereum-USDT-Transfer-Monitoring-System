@@ -106,7 +106,7 @@ Compared to other possible designs, this approach have a good balance between si
 
 Despite its strengths, the proposed design may have some limitations and trade-offs:
 
-- Relying on External Services: The code relies on external services like Infura for Ethereum node access and SMTP servers for email sending. Any issues or downtime with these services could impact the functionality of the monitoring system.
-- Potential Scalability Issues: If lots of transactions happen quickly, this code could have trouble. Implementing more advanced event detection mechanisms like WebSocket subscriptions could resolve this issue.
-- Limited Error Handling Scenarios: While it's prepared for most issues, there could be some rare problems it doesn't handle. Need to keep an eye on it and testing regularly can help catch these.
+- Depends on External Services: The code relies on external services like Infura for Ethereum node access and SMTP servers for email sending. Any issues or downtime with these services could impact the functionality of the monitoring system.
+- Might Get Slow: If lots of transactions happen quickly, this code could have trouble. Implementing more advanced event detection mechanisms like WebSocket subscriptions could resolve this issue.
+- Doesn't Cover Every Error: While it's prepared for most issues, there could be some rare problems it doesn't handle. Need to keep an eye on it and testing regularly can help catch these.
 
